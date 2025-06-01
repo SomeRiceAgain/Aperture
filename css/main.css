@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+.background_gray {
+    background: rgb(18,18, 18);
+}
+
+.background_black {
+    background: rgb(0,0,0);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto  ;
+}
+
+.wide {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    padding: 27px ;
+    width: 1160;
+    height: 90;
+    left: 120px;
+}
+
+header nav {
+    float: right;
+    width: 700px;
+    left: 480px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+header nav ul li.btn a{
+    color: #000;
+    font-size: 16px;
+
+    background-color: #FFF;
+    padding: 11px 20px;
+    border-radius: 14px;
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+}
+
+.hero_back img {
+    top: 0px;
+    right: 40px;
+    position: absolute;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero_info {
+    width: 600px;
+    padding-top: 450px;
+    z-index: 2;
+    position: relative;
+}
+
+.hero_info  h2 {
+    padding-top: 20px;
+
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #c0c0c0;
+}
+
+.hero_info h1 {
+    padding-top: 1px;
+
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 59.4px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.hero_info p {
+    padding-top: 18px;
+
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #c0c0c0;
+}
+
+.hero_stat {
+    padding-top: 14px;
+    padding-bottom: 40px;
+    padding-left: 1105px;
+    width: 295px;
+
+    position: relative;
+}
+.hero_stat ul {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero_stat img {
+    position: relative;
+    top: 3px;
+    right: 3px;
+}
+
+.block2 {
+    padding: 136px;
+    width: 1168px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block2_head {
+    text-align: center;
+    max-width: 600;
+    padding-left: 40px;
+}
+
+.block2_head h1 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 0%;
+}
+
+.block2_head p {
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #c0c0c0;
+}
+
+.block2_body {
+    padding: 120px 0px;
+    width: 1168px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.block2_body h2{
+    padding-top: -57px;
+    width: 513px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.block2_body h1{
+    padding-top: -7px;
+    width: 513px;
+    color: #c0c0c0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+.block2_body a {
+    color: #000;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+
+
+    background-color: #FFF;
+    padding: 11px 20px;
+    border-radius: 14px;
+}
+
+.block2_body span a img {
+    position: relative;
+    top: 10px;
+    left: -7px;
+}
+
+.block2_body span {
+    position: relative;
+    z-index: 2;
+    top: -160px;
+    left: 30px;
+}
+
+.block2_body .behind_txt {
+    position: relative;
+    z-index: 1;
+}
+
+.block2 .move_up345 {
+    margin-top: -345px;
+}
+
+.block3_back img{
+    margin-top: -300px;
+    right: 40px;
+    position: absolute;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block3_txt{
+    position: relative;
+    max-width: 300px;
+    left: 1120px;
+    top: -40px;
+}
+
+.block3_txt h1{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.block3_txt p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #c0c0c0;
+}
+
+
+.block3_stat {
+    padding-top: 180px;
+    padding-bottom: 40px;
+    padding-left: 1183.25px;
+    width: 256px;
+    position: relative;
+}
+.block3_stat ul {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.block3_stat img {
+    position: relative;
+    top: 3px;
+    right: 3px;
+}
