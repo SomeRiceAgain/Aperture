@@ -14,57 +14,46 @@ body {
     font-size: 14px;
 }
 
-
-
-.background_gray {
-    background: rgb(18,18, 18);
-}
-
 .background_black {
     background: rgb(0,0,0);
 }
 
 .container {
-    width: 1200px;
+    max-width: 1440px;
     margin: 0 auto  ;
 }
 
 .wide {
-    width: 1440px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
 
-header {
-    padding: 27px ;
-    width: 1160;
-    height: 90;
-    left: 120px;
+.header {
+    padding: 27px 147px ;
+    max-width: 1160px;
+    max-height: 90px;
+    background: rgb(18,18, 18);
 }
 
-header nav {
+.header_nav {
     float: right;
-    width: 700px;
-    left: 480px;
+    min-width: 700px;
 }
 
-header nav ul {
+.header_nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
-header nav ul li {
-    display: inline-block;
-}
-
-header nav ul li a {
+.header_nav a {
     color: #fff;
     font-weight: 400;
     font-size: 15px;
 }
 
-header nav ul li.btn a{
+.header_nav li.btn a{
     color: #000;
     font-size: 16px;
 
@@ -74,28 +63,24 @@ header nav ul li.btn a{
 }
 
 .hero {
-    position: relative;
-    z-index: 1;
-}
+    max-width: 1440px; 
+    min-height: 600px; 
+    margin: auto;
+    background-image: url("/img/IMAGE.svg");
+    background-repeat: no-repeat;
+    background-position: center; 
 
-.hero_back img {
-    top: 0px;
-    right: 40px;
-    position: absolute;
-    
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column; /* Для вертикального выравнивания */
+    justify-content: flex-end;
 }
 
 .hero_info {
-    width: 600px;
-    padding-top: 450px;
-    z-index: 2;
-    position: relative;
+    max-width: 600px;
 }
 
 .hero_info  h2 {
-    padding-top: 20px;
+    margin-top: 20px;
 
     font-weight: 400;
     line-height: 20px;
@@ -107,7 +92,7 @@ header nav ul li.btn a{
 }
 
 .hero_info h1 {
-    padding-top: 1px;
+    margin-top: 1px;
 
     font-weight: 400;
     font-size: 54px;
@@ -117,7 +102,7 @@ header nav ul li.btn a{
 }
 
 .hero_info p {
-    padding-top: 18px;
+    margin-top: 18px;
 
     font-weight: 400;
     line-height: 20px;
@@ -127,35 +112,44 @@ header nav ul li.btn a{
 }
 
 .hero_stat {
-    padding-top: 14px;
-    padding-bottom: 40px;
-    padding-left: 1105px;
-    width: 295px;
-
-    position: relative;
+    margin-top: 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: right;
+    padding-right: 5%;
+    padding-bottom: 3%;
 }
 .hero_stat ul {
     font-size: 12px;
     display: flex;
-    justify-content: space-between;
+    justify-content:end;
+    margin-right: 80px;
 }
 .hero_stat img {
-    position: relative;
+    margin-left: 15px;
+    margin-right: 6px;
     top: 3px;
     right: 3px;
 }
 
 .block2 {
-    padding: 136px;
-    width: 1168px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    padding-left: auto;
+    padding-right: auto;
+    
+    max-width: 1168px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .block2_head {
     text-align: center;
-    max-width: 600;
-    padding-left: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+    
 }
 
 .block2_head h1 {
@@ -175,16 +169,68 @@ header nav ul li.btn a{
 }
 
 .block2_body {
-    padding: 120px 0px;
-    width: 1168px;
+    max-width: 1168px;
+    min-height: 600px;
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    margin-bottom: 16px;
+}
+
+.block2_1 {
+    display: flex;
+    flex-direction: column; /* Для вертикального выравнивания */
+    justify-content: flex-end;
+
+    min-width: 576px;
+    background-image: url(/img/body2_1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.block2_2 {
+    display: flex;
+    flex-direction: column; /* Для вертикального выравнивания */
+    justify-content: flex-end;
+    
+    min-width: 576px;
+    background-image: url(/img/body2_2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.block2_3 {
+    display: flex;
+    flex-direction: column; /* Для вертикального выравнивания */
+    justify-content: flex-end;
+    
+    min-width: 576px;
+    background-image: url(/img/body2_3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.block2_4 {
+    display: flex;
+    flex-direction: column; /* Для вертикального выравнивания */
+    justify-content: flex-end;
+    
+    min-width: 576px;
+    background-image: url(/img/body2_4.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.block2_text {
+    max-width: 513px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 .block2_body h2{
-    padding-top: -57px;
-    width: 513px;
+    margin-bottom: 4px;
 
     font-weight: 400;
     font-size: 14px;
@@ -194,8 +240,8 @@ header nav ul li.btn a{
 }
 
 .block2_body h1{
-    padding-top: -7px;
-    width: 513px;
+    margin-bottom: 10px;
+    max-width: 513px;
     color: #c0c0c0;
 
     font-weight: 400;
@@ -211,48 +257,36 @@ header nav ul li.btn a{
     line-height: 20px;
     letter-spacing: 0.4px;
 
-
     background-color: #FFF;
     padding: 11px 20px;
     border-radius: 14px;
-}
 
-.block2_body span a img {
+    margin-bottom: 20px;
+}
+.block2_body a img {
     position: relative;
     top: 10px;
     left: -7px;
 }
 
-.block2_body span {
-    position: relative;
-    z-index: 2;
-    top: -160px;
-    left: 30px;
-}
 
-.block2_body .behind_txt {
-    position: relative;
-    z-index: 1;
-}
+.block3{
+    max-width: 1440px;  
+    min-height: 600px; 
 
-.block2 .move_up345 {
-    margin-top: -345px;
-}
-
-.block3_back img{
-    margin-top: -300px;
-    right: 40px;
-    position: absolute;
+    margin: auto;
+    background-image: url("/img/block3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     
-    margin-left: auto;
-    margin-right: auto;
+    display: grid;
 }
 
 .block3_txt{
-    position: relative;
     max-width: 300px;
-    left: 1120px;
-    top: -40px;
+    position: relative;
+    top: 80%;
+    left: 75%;
 }
 
 .block3_txt h1{
@@ -271,21 +305,18 @@ header nav ul li.btn a{
     color: #c0c0c0;
 }
 
-
 .block3_stat {
-    padding-top: 180px;
-    padding-bottom: 40px;
-    padding-left: 1183.25px;
-    width: 256px;
-    position: relative;
-}
-.block3_stat ul {
+    place-self: end;
+
     font-size: 12px;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
+    padding-right: 5%;
+    padding-bottom: 3%;
 }
 .block3_stat img {
+    padding-left: 15px;
+    padding-right: 5px;
     position: relative;
-    top: 3px;
-    right: 3px;
+    left: 3px;
 }
